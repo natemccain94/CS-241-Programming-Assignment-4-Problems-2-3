@@ -1,0 +1,33 @@
+Nate McCain
+Programming Assignment 4 Problem 3
+CS 241
+19 November, 2015
+
+1) Does your compiler optimize tail recursion? Did it make a significant difference in execution time?
+Xcode did make use of optimizing tail recursion (once I made a few changes to the build settings). It made a significant difference in the execution time for the tail recursion function compared to the regular recursion function. The average time for the regular recursion was 45 clicks, whereas tail recursion had an average time of 3 clicks. In relative time, the difference is almost nonexistant, but if we increase the size of the problem, the difference in completion time will grow exponentially.
+
+2) How did you turn on optimization and which compiler did you test it on?
+I tested the program on Xcode. To turn on the optimization, I had to go to target’s build settings, and under the section “Apple LLVM 7.0 - Code Generation” went to the “Optimization Level” setting. From there I switched all options to “Fastest, Aggressive Optimization.” 
+
+3) List the values of ’n’ you used and the wall-clock times for regular recursion and tail recursion.
+
+n = 1: regular = 42 clicks
+	tail = 3 clicks
+n = 2: regular = 43 clicks
+	tail = 2 clicks
+n = 3: regular = 46 clicks
+	tail = 4 clicks
+n = 4: regular = 44 clicks
+	tail = 2 clicks
+n = 5: regular = 42 clicks
+	tail =  clicks
+n = 6: regular = 3 clicks
+	tail =  clicks
+n = 7: regular = 44 clicks
+	tail = 3 clicks
+n = 8: regular = 45 clicks
+	tail = 4 clicks
+n = 9: regular = 44 clicks
+	tail = 3 clicks
+n = 10: regular = 45 clicks
+	tail = 4 clicks
